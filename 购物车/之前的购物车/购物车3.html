@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车</title>
+		<!-- <script src="js/xinxin.js" type="text/javascript" charset="utf-8"></script> -->
+		<script type="text/javascript" src="购物车3.js">
+			
+		</script>
+		<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		table{
+			width:800px;
+			height: 300px;
+			background-color:skyblue;
+			margin:0 auto;
+		}
+		.a{
+			text-align: center;
+			font-size: 13px;
+			background-color: white;
+		}
+		.b td{
+			width: 100%;
+		}
+		.b td div {
+			float: right;
+		}
+		.b td div::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		</style>
+	</head>
+	<body>
+		<table border="1" cellpadding="0" cellspacing="0">
+			<tr>
+				<th><input type="checkbox" id="check-all check">全选/反选</th>
+				<th>商品</th>
+				<th>单价</th>
+				<th>数量</th>
+				<th>小计</th>
+				<th>操作</th>
+			</tr>
+			
+			<tbody id="tbody">	
+			   <tr class="a">
+				<td><input type="checkbox" class="check-one check"></td>
+				<td>短袖</td>
+				<td class="dan">50</td>
+				<td><button style="width:20px;height: 20px;" class="jian">-</button><input type="text"  value="1" style="width:30px;height: 20px;"  class="shuliang"><button style="width:20px;height: 20px;"class="add">+</button></td>
+				<td class="xiaoji">50</td>
+				<td><button class="delete">删除</button></td>
+				
+			</tr>
+			<tr class="a">
+				<td><input type="checkbox" class="check-one check"></td>
+				<td>裤子</td>
+				<td class="dan">70</td>
+				<td><button style="width:20px;height: 20px;"class="jian">-</button><input type="text" value="1" style="width:30px;height: 20px;" class="shuliang"><button style="width:20px;height: 20px;"class="add">+</button></td>
+				<td class="xiaoji">70</td>
+				<td><button class="delete">删除</button></td>
+			</tr>
+			<tr class="a">
+				<td><input type="checkbox" class="check-one check"></td>
+				<td>鞋子</td>
+				<td class="dan">150</td>
+				<td><button style="width:20px;height: 20px;"class="jian">-</button><input type="text" value="1" style="width:30px;height: 20px;"class="shuliang"><button style="width:20px;height: 20px;"class="add">+</button></td>
+				<td class="xiaoji">150</td>
+				<td><button class="delete">删除</button></td>
+			</tr>
+			<tr class="a">
+				<td><input type="checkbox" class="check-one check"></td>
+				<td>手表</td>
+				<td class="dan">850</td>
+				<td><button style="width:20px;height: 20px;"class="jian">-</button><input type="text" value="1" style="width:30px;height: 20px;" class="shuliang"><button style="width:20px;height: 20px;"class="add">+</button></td>
+				<td class="xiaoji">850</td>
+				<td><button class="delete">删除</button></td>
+			</tr>
+			</tbody>
+			<tr class="b">
+				<td colspan="6">
+					<div>
+						合计：￥<span id="priceTotal">0</span>
+						已选商品<span id="selectedTotal">0</span>件 					
+					</div>
+				</td>				
+			</tr>
+		</table>
+	</body>
+	
+</html>
+
