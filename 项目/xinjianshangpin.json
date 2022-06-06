@@ -1,0 +1,4 @@
+{
+    "inputName":["商品编号","商品名称","规格","单位","请购数量","可用量","现存量","商品市场价"],
+    "input":["input","input","input","input","input","input","input","input"]
+}

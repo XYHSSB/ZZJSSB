@@ -1,0 +1,16 @@
+.layui-fluid{
+    border: 1px solid #f9f9f9;
+    height: 20px;
+    
+}
+.layui-row{
+    margin-top: 20px;
+    border: 1px solid #f9f9f9;
+}
+button{
+    margin-left: 20px;
+}
+.layui-table-cell .layui-form-checkbox[lay-skin="primary"]{
+    top: 50%;
+    transform: translateY(-50%);
+}

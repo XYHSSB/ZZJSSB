@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../CSS/CreateAReturn.css">
+    <script src="../layui/layui.js"></script>
+    <script src="../JS/jquery_mini.js"></script>
+    <script src="../JS/CreateAReturn.js"></script>
+</head>
+<body>
+    <div class="layui-fluid">
+        <span class="layui-breadcrumb">
+            <a href="">采购管理</a>
+            <a href="">创建退货单</a>
+          </span>
+    </div>
+    <div class="layui-container	" style="background-color: #F2F2F2;">
+        <i class="layui-icon" style="font-size: 20px; color: #1E9FFF;line-height: 65px;" id="icon0">&#xe607;</i>
+        <span style="font-size: 20px;" id="span0">基本信息</span> 
+    </div>
+    <div class="layui-container	">
+        <div class="layui-row">
+            <form class="layui-form" action="">
+            <div class="layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">退货单创建日期</label>
+                    <div class="layui-inline"> <!-- 注意：这一层元素并不是必须的 -->
+                        <input type="text" class="layui-input" id="test1">
+                    </div>
+                  </div>
+
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">供应商编号</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">退货地址</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">退货仓库</label>
+                    <div class="layui-input-block">
+                        <select name="city" lay-verify="required">
+                            <option value=""></option>
+                            <option value="0">上井仓库</option>
+                            <option value="1">下井仓库</option>
+                            <option value="2">左井仓库</option>
+                            <option value="3">右井仓库</option>  
+                          </select>
+                    </div>
+                  </div>
+
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">退货发起人</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+            </div>
+
+            <div class="layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">退货日期</label>
+                    <div class="layui-inline"> <!-- 注意：这一层元素并不是必须的 -->
+                        <input type="text" class="layui-input" id="test1">
+                    </div>
+                  </div>
+
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">供应商名称</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">退货联系人/联系方式</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">退货方式</label>
+                    <div class="layui-input-block">
+                        <select name="city" lay-verify="required">
+                            <option value=""></option>
+                            <option value="0">退货退钱</option>
+                            <option value="1">退钱不退货</option>
+                            <option value="2">换货</option>
+                            <option value="3">退货换新</option>  
+                          </select>
+                    </div>
+                  </div>
+
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">所在部门</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+            </div>
+        </form>
+        </div>
+    </div>
+
+</body> 
+</html>
