@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="购物车_2.js"></script>
+		<style type="text/css">
+			table{
+				border-collapse: collapse;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<table border="2" cellspacing="0" cellpadding="0">
+				<tr>
+					<th><input type="checkbox" id='check_all'/>全选</th>
+					<th>商品名称</th>
+					<th>单价</th>
+					<th>数量</th>
+					<th>小计</th>
+					<th>操作</th>
+				</tr>
+				<tbody id='ta'>
+					<tr>
+						<td><input type="checkbox" class="radio"></td>
+						<td>电脑</td>
+						<td>200</td>
+						<td><button type="button" class='lose'>-</button><input type="text" value="1"><button type="button" class='add'>+</button></td>
+						<td>200</td>
+						<td><span class="delet">删除</span></td>
+					</tr>
+					
+					<tr>
+						<td><input type="checkbox" class="radio"></td>
+						<td>手机</td>
+						<td>1800</td>
+						<td><button type="button" class='lose'>-</button><input type="text" value="1"><button type="button" class='add'>+</button></td>
+						<td>1800</td>
+						<td><span class="delet">删除</span></td>
+					</tr>
+				</tbody>
+				
+			</table>
+		</div>
+		<div>
+			<span>总价：</span><span id="zong">0</span><span>元</span>
+			<span>已选商品：</span><span id="yi">0</span><span>件</span>
+		</div>
+	</body>
+</html>

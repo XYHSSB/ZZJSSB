@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../layui/layui.js"></script>
+    <script src="../JS/jquery_mini.js"></script>
+    <script src="../JS/PurchaseOrderManagement.js"></script>
+</head>
+<body>
+
+    <form class="layui-form" action="">
+        <div class="layui-container">
+            <div class="layui-row">
+                <div class="layui-col-lg3">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">采购单状态</label>
+                        <div class="layui-input-block">
+                            <select name="city" lay-verify="required">
+                                <option value=""></option>
+                                <option value="0">已采购</option>
+                                <option value="1">未采购</option>
+                              </select>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="layui-col-lg3">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">创建日期</label>
+                        <div class="layui-input-block">
+                            <input type="text" class="layui-input" id="test1">
+                        </div>
+                      </div>
+                </div>
+
+                <div class="layui-col-lg3">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">供应商名称</label>
+                        <div class="layui-input-block">
+                          <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                        </div>
+                      </div>
+                </div>
+
+                <div class="layui-col-lg3">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">请购负责人</label>
+                        <div class="layui-input-block">
+                          <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                        </div>
+                      </div>
+                </div>
+
+                <div class="layui-col-lg6">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>   
+                    </div>
+                </div>
+            </div> 
+        </div>   
+    </form>
+    <div class="layui-container">
+        <table id="demo" lay-filter="test"></table>
+    </div>
+</body>
+</html>

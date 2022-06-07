@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../layui/layui.js"></script>
+    <script src="../JS/jquery_mini.js"></script>
+    <script src="../JS/ReturnOrderManagement.js"></script>
+</head>
+<body>
+    <div class="layui-fluid">
+        <span class="layui-breadcrumb" lay-separator="-">
+            <a href="">采购管理</a>
+            <a href="">退货单管理</a>
+          </span>
+    </div>
+    <div class="layui-container">
+        <form class="layui-form" action="">
+        <div class="layui-row">
+            <div class="layui-col-lg3">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">退货单状态</label>
+                    <div class="layui-input-block">
+                      <select name="city" lay-verify="required">
+                        <option value=""></option>
+                        <option value="0">待分配</option>
+                        <option value="1">待指派</option>
+                        <option value="2">待提交</option>
+                        <option value="3">待审核</option>
+                        <option value="4">审核通过</option>
+                        <option value="4">审核拒绝</option>  
+                      </select>
+                    </div>
+                  </div>
+            </div>
+            <div class="layui-col-lg3">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">退货单状态</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input" id="test1">
+                    </div>
+                  </div>
+                
+            </div>
+
+
+
+            <div class="layui-col-lg3">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">供应商名称</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+
+            </div>
+            <div class="layui-col-lg3">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">退货仓库</label>
+                    <div class="layui-input-block">m
+                      <select name="city" lay-verify="required">
+                        <option value=""></option>
+                        <option value="0">上井仓库</option>
+                        <option value="1">下井仓库</option>
+                        <option value="2">左井仓库</option>
+                        <option value="3">右井仓库</option>  
+                      </select>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="layui-input-block" >
+                <button class="layui-btn" lay-submit lay-filter="formDemo">搜索</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+              </div>
+        </div>
+    </form>
+    
+    </div>
+
+    <div class="layui-container">
+        <table id="demo1" lay-filter="test"></table>
+    </div>
+</body>
+</html>

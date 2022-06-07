@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../CSS/Supplier Management.css">
+        <link rel="stylesheet" href="../layui/css/layui.css">
+        <script src="../layui/layui.js"></script>
+        <script src="../JS/jquery_mini.js"></script>
+        <script src="../JS/Supplier Management.js"></script> 
+        
+    </head>
+
+    <body>
+<div class="layui-btn-fluid" id="WebHeader">
+
+       
+    
+        <div class="layui-col-lg12"  style="height:50px" id="hard">
+            <span class="layui-breadcrumb" id="crumbs">
+                <!-- <a href="">采购管理</a>
+                <a href="">供应商管理</a> -->
+              </span>
+        </div>
+       
+</div>
+    
+ <!-- ----------------------------- -->
+
+
+   
+        <div class="layui-col-lg10 layui-col-md-offset1"  id="baga">
+            <div class="layui-col-lg3" >
+                <div class="layui-form-item">
+                    <label class="layui-form-label">供应商编号</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="title" required  lay-verify="required" placeholder="请输入供应商编号" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+            </div>
+
+            <div class="layui-col-lg3" >
+                <div class="layui-form-item">
+                  <label class="layui-form-label">建档日期</label>
+
+                  <div class="layui-input-block">
+                    <input type="text" class="layui-input" id="test1">
+                  </div>
+                  
+                </div>
+            </div>
+
+            <div class="layui-col-lg3" >
+                <div class="layui-form-item">
+                    <label class="layui-form-label">供应商来源</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="title" required  lay-verify="required" placeholder="请输入商品品牌" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+            </div>
+
+            <div class="layui-col-lg3" >
+                <div class="layui-form-item">
+                    <label class="layui-form-label">负责人</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="title" required  lay-verify="required" placeholder="请输入负责人姓名" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+            </div>
+
+            <div class="layui-col-lg3" >
+                <div class="layui-form-item">
+                    <label class="layui-form-label">单位名称</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="title" required  lay-verify="required" placeholder="请输入单位名称" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+            </div>
+
+            <div class="layui-col-lg3" >
+                <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">品牌</label>
+                    <div class="layui-input-block">
+                      <select name="city" lay-verify="required">
+                        <option value=""></option>
+                        <option value="0">A品牌</option>
+                        <option value="1">B品牌</option>
+                        <option value="2">C品牌</option>
+                        <option value="3">D品牌</option>
+                        <option value="4">E品牌</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+            </div>
+      
+
+            <div class="layui-col-lg3" >
+                <div class="layui-form-item">
+                    <label class="layui-form-label">经营范围</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+            </div>
+
+            
+
+            <div class="layui-col-lg12" >
+                <button type="button" class="layui-btn">
+                    <i class="layui-icon layui-icon-search">搜索</i>
+                </button>
+
+                <button type="button" class="layui-btn" id="btnadd">
+                  <i class="layui-icon layui-icon-add-circle">添加</i>
+              </button>
+                
+            </div>       
+        </div>
+
+<!-- -------------------------------------------------- -->
+        <div class="layui-col-lg10 layui-col-md-offset1" id="tables">
+            <table id="demo" lay-filter="test" ></table>
+        </div>
+
+
+        
+
+ 
+    
+ 
+    
+
+
+
+
+
+                 
+</body>
+</html>
